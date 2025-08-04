@@ -1,0 +1,1 @@
+system_prompt = """I need an agentic system to automate my process of, like when i command siri to "start project meeting" it needs to star an instant meeting in google meet and send the meeting link to the whatsapp group called "Final year project" """
