@@ -1,0 +1,59 @@
+{
+  "overall": {
+    "total_duration": 400.2388195991516,
+    "total_tokens": 4147,
+    "total_llm_calls": 15,
+    "components_tested": 5,
+    "successful_components": 5,
+    "failed_components": 0,
+    "success_rate": 1.0
+  },
+  "components": [
+    {
+      "name": "BaseAgentParser",
+      "duration": 0.0030159950256347656,
+      "tokens_used": 0,
+      "llm_calls": 0,
+      "success": true,
+      "error": null
+    },
+    {
+      "name": "MCPDiscoveryScanner",
+      "duration": 2.4338228702545166,
+      "tokens_used": 0,
+      "llm_calls": 0,
+      "success": true,
+      "error": null
+    },
+    {
+      "name": "SemanticMatcher",
+      "duration": 153.0202555656433,
+      "tokens_used": 954,
+      "llm_calls": 9,
+      "success": true,
+      "error": null
+    },
+    {
+      "name": "OutputGenerator",
+      "duration": 0.0,
+      "tokens_used": 0,
+      "llm_calls": 0,
+      "success": true,
+      "error": null
+    },
+    {
+      "name": "CompleteWorkflow",
+      "duration": 244.77758646011353,
+      "tokens_used": 3193,
+      "llm_calls": 6,
+      "success": true,
+      "error": null
+    }
+  ],
+  "timing_breakdown": {
+    "discovery": 2.4338228702545166,
+    "matching": 0,
+    "execution": 0,
+    "output": 0.0
+  }
+}

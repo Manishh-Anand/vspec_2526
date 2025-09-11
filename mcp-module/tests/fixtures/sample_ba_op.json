@@ -1,0 +1,210 @@
+{
+  "agents": [
+    {
+      "id": "finance_agent_001",
+      "name": "Monthly Expenditure Tracking Agent",
+      "description": "Tracks spending patterns, categorizes transactions, and provides budget recommendations",
+      "domain": "finance",
+      "tools": [
+        {
+          "name": "track_expenditure",
+          "description": "Track monthly spending patterns and categorize transactions",
+          "parameters": {
+            "account_id": "string",
+            "date_range": "object",
+            "categories": "array"
+          },
+          "priority": 1
+        },
+        {
+          "name": "analyze_portfolio",
+          "description": "Analyze investment portfolio and suggest optimizations",
+          "parameters": {
+            "portfolio_id": "string",
+            "risk_tolerance": "string",
+            "investment_goals": "array"
+          },
+          "priority": 2
+        }
+      ],
+      "resources": [
+        {
+          "name": "financial_reports",
+          "description": "Access to financial reports and analytics",
+          "uri": "finance://reports/monthly",
+          "mime_type": "application/json"
+        }
+      ],
+      "prompts": [
+        {
+          "name": "budget_advice",
+          "description": "Generate personalized budget recommendations",
+          "template": "Based on your spending patterns of {amount} in {category}, I recommend {advice}",
+          "arguments": [
+            {
+              "name": "amount",
+              "type": "number",
+              "required": true
+            },
+            {
+              "name": "category",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "advice",
+              "type": "string",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "productivity_agent_001",
+      "name": "AI-Powered Email Summarization Agent",
+      "description": "Summarizes lengthy emails and suggests quick responses",
+      "domain": "productivity",
+      "tools": [
+        {
+          "name": "summarize_emails",
+          "description": "Summarize lengthy emails and suggest quick responses",
+          "parameters": {
+            "email_ids": "array",
+            "summary_length": "string",
+            "include_suggestions": "boolean"
+          },
+          "priority": 1
+        },
+        {
+          "name": "meeting_assistant",
+          "description": "Automate scheduling, rescheduling, and meeting notes generation",
+          "parameters": {
+            "calendar_id": "string",
+            "meeting_duration": "number",
+            "participants": "array"
+          },
+          "priority": 2
+        }
+      ],
+      "resources": [
+        {
+          "name": "productivity_templates",
+          "description": "Templates for common productivity tasks",
+          "uri": "productivity://templates/email",
+          "mime_type": "application/json"
+        }
+      ],
+      "prompts": [
+        {
+          "name": "productivity_optimization",
+          "description": "Suggest productivity improvements and time management strategies",
+          "template": "Based on your {activity} patterns, here are {count} productivity tips: {tips}",
+          "arguments": [
+            {
+              "name": "activity",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "count",
+              "type": "number",
+              "required": false
+            },
+            {
+              "name": "tips",
+              "type": "array",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education_agent_001",
+      "name": "AI-Powered Research Assistant",
+      "description": "Extracts key insights from academic papers and research",
+      "domain": "education",
+      "tools": [
+        {
+          "name": "research_assistant",
+          "description": "Extract key insights from academic papers and research",
+          "parameters": {
+            "paper_url": "string",
+            "focus_areas": "array",
+            "summary_length": "string"
+          },
+          "priority": 1
+        },
+        {
+          "name": "career_guidance",
+          "description": "Suggest career paths and learning resources based on skills",
+          "parameters": {
+            "skills": "array",
+            "experience_level": "string",
+            "interests": "array"
+          },
+          "priority": 2
+        }
+      ],
+      "resources": [
+        {
+          "name": "educational_content",
+          "description": "Access to educational materials and courses",
+          "uri": "education://content/courses",
+          "mime_type": "application/json"
+        }
+      ],
+      "prompts": [
+        {
+          "name": "learning_strategy",
+          "description": "Generate personalized learning strategies and study plans",
+          "template": "For {subject} at {level} level, I recommend this learning path: {path}",
+          "arguments": [
+            {
+              "name": "subject",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "level",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "path",
+              "type": "array",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "performance": {
+      "response_time": "< 100ms",
+      "throughput": "1000+ requests/second"
+    },
+    "reliability": {
+      "availability": "99.9%",
+      "error_rate": "< 1%"
+    }
+  },
+  "context": {
+    "user_id": "user_123",
+    "session_id": "session_456",
+    "preferences": {
+      "language": "en",
+      "timezone": "UTC",
+      "notifications": true
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2024-01-15T10:30:00Z",
+    "source": "base_agent",
+    "total_agents": 3,
+    "domains": ["finance", "productivity", "education"]
+  }
+}
