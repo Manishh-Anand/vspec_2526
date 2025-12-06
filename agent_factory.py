@@ -2446,7 +2446,7 @@ CRITICAL: Output only the generated prompt text itself, with no introductory phr
             'description': identity.get('description', ''),
             
             # LLM configuration
-            'llm_model': llm_config.get('model', 'mistral:latest'),
+            'llm_model': llm_config.get('model', 'Qwen2.5-Coder-14B-Instruct-Q4_K_M'),
             'temperature': llm_config.get('params', {}).get('temperature', 0.1),
             'max_tokens': llm_config.get('params', {}).get('max_tokens', 500),
             
@@ -3082,7 +3082,7 @@ if __name__ == "__main__":
 if __name__ == "__main__":
     # Configuration paths
     mcp_config_file_path = r"D:\final_yr_project_2526\mcp-module\mcp_configuration_output.json"
-    local_llm_model_name = "openhermes-2.5-mistral-7b"  # Updated for your specific model
+    local_llm_model_name = "Qwen2.5-Coder-14B-Instruct-Q4_K_M"  # Updated to use Qwen2.5-Coder-14B
     output_directory_name = "agents_created"
 
     # --- Start the Process ---
@@ -3090,7 +3090,7 @@ if __name__ == "__main__":
         print("=" * 60)
         print("🚀 STARTING AGENT GENERATION PROCESS")
         print("=" * 60)
-        print("🤖 LLM Model: openhermes-2.5-mistral-7b")
+        print("🤖 LLM Model: Qwen2.5-Coder-14B-Instruct-Q4_K_M")
         print("🌐 LLM Server: http://127.0.0.1:1234")
         print("📁 Output Directory: agents_created")
         print("📋 Updated for HTTP MCP Server Integration")

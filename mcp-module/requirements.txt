@@ -1,6 +1,0 @@
-# MCP Module Requirements
-# For development, use: pip install -r requirements/dev.txt
-# For production, use: pip install -r requirements/prod.txt
-
-# Include base requirements by default
--r requirements/base.txt
