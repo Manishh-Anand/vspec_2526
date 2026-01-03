@@ -1,0 +1,20 @@
+**Situation:**  
+Need to gather information on the KTM ADV 390 X PLUS in white color.
+
+**Task:**  
+1. Look up information online.
+2. Create a new page in my workspace with a summary of the bike's details.
+3. Add a calendar event for a test ride on December 20th at 3:30 pm.
+4. Draft an email to a friend about interest in the bike and invitation to the test ride.
+5. Create a new repository in GitHub with a README.md file summarizing the bike's details.
+
+**Action:**  
+1. Conduct online research on the KTM ADV 390 X PLUS in white color.
+2. Summarize findings into bullet points.
+3. Use workspace tools to create a new page and paste the summary.
+4. Schedule a calendar event for December 20th at 3:30 pm.
+5. Draft an email to 1dt22ca027@dsatm.edu.in expressing interest and inviting to the test ride.
+6. Create a new repository on GitHub titled "KTM ADV 390 X PLUS" and add a README.md file with the summarized points.
+
+**Result:**  
+A comprehensive summary of the KTM ADV 390 X PLUS in white color is available in my workspace, a calendar event for the test ride is scheduled, an email has been drafted to invite a friend, and a GitHub repository with relevant information has been created.

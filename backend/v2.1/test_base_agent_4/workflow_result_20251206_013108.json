@@ -1,0 +1,170 @@
+{
+  "success": true,
+  "workflow_id": "workflow_20241129_002",
+  "domain": "Productivity|Research|Communication|Data|Creative",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 287.08078,
+  "start_time": "2025-12-06T01:26:21.235432",
+  "end_time": "2025-12-06T01:31:08.316216",
+  "total_agents": 5,
+  "agents_executed": 5,
+  "agents_succeeded": 5,
+  "agents_failed": 0,
+  "final_output": "[Response using ACTUAL tool results, not placeholders]",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 6919, 'iterations': 7, 'avg_per_iteration': 988.4285714285714, 'max_iteration': 1228, 'threshold_violations': 1}",
+      "duration": 153.81967663764954,
+      "timestamp": "2025-12-06T01:28:55.057612",
+      "token_stats": {
+        "total_tokens": 6919,
+        "iterations": 7,
+        "avg_per_iteration": 988.4285714285714,
+        "max_iteration": 1228,
+        "threshold_violations": 1
+      }
+    },
+    "agent_2": {
+      "output": "A new page titled \"Task Summary\" has been created in Notion with the following content:\n\n- Previous Task: Agent ResearchAgent\n- Stopped by Token Sentinel.\n- Stats:\n  - total_tokens: 6919\n  - iterations: 7\n  - avg_per_iteration: 988.4285714285714\n  - max_iteration: 1228\n  - threshold_violations: 1",
+      "duration": 45.14866256713867,
+      "timestamp": "2025-12-06T01:29:40.210278",
+      "token_stats": {
+        "total_tokens": 655,
+        "iterations": 1,
+        "avg_per_iteration": 655.0,
+        "max_iteration": 655,
+        "threshold_violations": 0
+      }
+    },
+    "agent_3": {
+      "output": "The test ride has been scheduled for November 20th at 3:30 pm.",
+      "duration": 22.495424509048462,
+      "timestamp": "2025-12-06T01:30:02.708216",
+      "token_stats": {
+        "total_tokens": 674,
+        "iterations": 1,
+        "avg_per_iteration": 674.0,
+        "max_iteration": 674,
+        "threshold_violations": 0
+      }
+    },
+    "agent_4": {
+      "output": "An invitation email has been successfully sent to [Friend's Name] for the test ride scheduled on November 20th at 3:30 pm.",
+      "duration": 41.10180139541626,
+      "timestamp": "2025-12-06T01:30:43.811012",
+      "token_stats": {
+        "total_tokens": 757,
+        "iterations": 1,
+        "avg_per_iteration": 757.0,
+        "max_iteration": 757,
+        "threshold_violations": 0
+      }
+    },
+    "agent_5": {
+      "output": "[Response using ACTUAL tool results, not placeholders]",
+      "duration": 24.500579357147217,
+      "timestamp": "2025-12-06T01:31:08.313593",
+      "token_stats": {
+        "total_tokens": 717,
+        "iterations": 1,
+        "avg_per_iteration": 717.0,
+        "max_iteration": 717,
+        "threshold_violations": 0
+      }
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2025-12-06T01:26:21.237936",
+      "end_time": "2025-12-06T01:28:55.057612",
+      "duration": 153.81967663764954,
+      "status": "success",
+      "output_length": 163,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 6919,
+        "iterations": 7,
+        "avg_per_iteration": 988.4285714285714,
+        "max_iteration": 1228,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "**DocumenterAgent**",
+      "position": 2,
+      "start_time": "2025-12-06T01:28:55.061615",
+      "end_time": "2025-12-06T01:29:40.210278",
+      "duration": 45.14866256713867,
+      "status": "success",
+      "output_length": 297,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 655,
+        "iterations": 1,
+        "avg_per_iteration": 655.0,
+        "max_iteration": 655,
+        "threshold_violations": 0
+      }
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_name": "**SchedulerAgent**",
+      "position": 3,
+      "start_time": "2025-12-06T01:29:40.211787",
+      "end_time": "2025-12-06T01:30:02.708216",
+      "duration": 22.495424509048462,
+      "status": "success",
+      "output_length": 62,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 674,
+        "iterations": 1,
+        "avg_per_iteration": 674.0,
+        "max_iteration": 674,
+        "threshold_violations": 0
+      }
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_name": "**NotifierAgent**",
+      "position": 4,
+      "start_time": "2025-12-06T01:30:02.709211",
+      "end_time": "2025-12-06T01:30:43.811012",
+      "duration": 41.10180139541626,
+      "status": "success",
+      "output_length": 122,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 757,
+        "iterations": 1,
+        "avg_per_iteration": 757.0,
+        "max_iteration": 757,
+        "threshold_violations": 0
+      }
+    },
+    {
+      "agent_id": "agent_5",
+      "agent_name": "**DocumenterAgent**",
+      "position": 5,
+      "start_time": "2025-12-06T01:30:43.813014",
+      "end_time": "2025-12-06T01:31:08.313593",
+      "duration": 24.500579357147217,
+      "status": "success",
+      "output_length": 54,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 717,
+        "iterations": 1,
+        "avg_per_iteration": 717.0,
+        "max_iteration": 717,
+        "threshold_violations": 0
+      }
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

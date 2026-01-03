@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-11-29T12:44:22.207913",
+  "workflow_id": "workflow_manual_test",
+  "total_duration": 79.9455418586731,
+  "tool_tests": [
+    {
+      "test": "valid_tool_call",
+      "tool_name": "search_web",
+      "success": true,
+      "duration": 33.601484060287476,
+      "result_preview": "Tool 'search_web' executed.\nResult:\nI need permission to use the `mcp__jina-mcp-server__search_web` tool. This is a web search tool that searches the internet for information based on your query.\n\nWou"
+    },
+    {
+      "test": "invalid_tool_name",
+      "tool_name": "nonexistent_tool",
+      "success": true,
+      "duration": 0.0
+    },
+    {
+      "test": "tool_with_parameters",
+      "tool_name": "send_email",
+      "success": true,
+      "duration": 25.80336284637451,
+      "parameters_count": 3
+    }
+  ],
+  "agent_tests": [
+    {
+      "test": "simple_query",
+      "agent_name": "ResearchAgent",
+      "success": true,
+      "duration": 4.106663942337036,
+      "output_length": 372,
+      "steps_count": 0
+    },
+    {
+      "test": "tool_usage_task",
+      "agent_name": "ResearchAgent",
+      "success": true,
+      "used_tool": false,
+      "duration": 4.091055631637573,
+      "steps_count": 0
+    }
+  ],
+  "workflow_tests": [
+    {
+      "test": "complete_workflow",
+      "success": true,
+      "duration": 8.22085165977478,
+      "agents_executed": 6,
+      "total_agents": 2,
+      "error_count": 0
+    }
+  ],
+  "error_recovery_tests": [
+    {
+      "test": "invalid_tool_recovery",
+      "success": true,
+      "error_handled": false,
+      "duration": 4.111562252044678
+    }
+  ]
+}

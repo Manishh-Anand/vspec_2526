@@ -1,0 +1,73 @@
+{
+  "workflow_metadata": {
+    "workflow_id": "financial_analysis_workflow_001",
+    "domain": "finance",
+    "selected_architecture": "pipeline",
+    "complexity_level": "medium",
+    "total_agents": 2,
+    "estimated_execution_time": "5-10 minutes"
+  },
+  "agents": [
+    {
+      "agent_id": "financial_analyzer_001",
+      "agent_name": "Financial Data Analyzer",
+      "position": 1,
+      "identity": {
+        "role": "Financial data processing and analysis specialist",
+        "expertise": "Banking, investments, financial modeling"
+      },
+      "tools": [
+        {
+          "name": "bank_statement_parser",
+          "server": "mcp_server",
+          "purpose": "Parse and analyze bank statements for financial insights",
+          "auth_required": false
+        },
+        {
+          "name": "investment_portfolio_analyzer",
+          "server": "mcp_server",
+          "purpose": "Analyze investment portfolios and provide recommendations",
+          "auth_required": true
+        }
+      ]
+    },
+    {
+      "agent_id": "data_processor_002",
+      "agent_name": "Data Processing Agent",
+      "position": 2,
+      "identity": {
+        "role": "Data transformation and processing specialist",
+        "expertise": "CSV processing, data cleaning, format conversion"
+      },
+      "tools": [
+        {
+          "name": "csv_data_processor",
+          "server": "mcp_server",
+          "purpose": "Process CSV data files and convert to structured format",
+          "auth_required": false
+        }
+      ]
+    }
+  ],
+  "orchestration": {
+    "pattern": "pipeline",
+    "connections": [
+      {
+        "from": "financial_analyzer_001",
+        "to": "data_processor_002",
+        "type": "pipe",
+        "condition": ""
+      }
+    ]
+  },
+  "domain_config": {
+    "security": "high",
+    "compliance": ["GDPR", "SOX", "PCI-DSS"],
+    "constraints": {
+      "data_retention": "7 years",
+      "encryption": "AES-256",
+      "audit_logging": "required"
+    }
+  }
+}
+

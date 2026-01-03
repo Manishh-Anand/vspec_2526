@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "workflow_id": "workflow_TIMESTAMP",
+  "domain": "Research|Productivity|Documentation",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 1986.03453,
+  "start_time": "2026-01-03T13:15:37.213058",
+  "end_time": "2026-01-03T13:48:43.253739",
+  "total_agents": 4,
+  "agents_executed": 4,
+  "agents_succeeded": 4,
+  "agents_failed": 0,
+  "final_output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=300)",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Agent stopped due to max iterations.",
+      "duration": 454.59364128112793,
+      "timestamp": "2026-01-03T13:23:11.834347",
+      "token_stats": {
+        "total_tokens": 13631,
+        "iterations": 10,
+        "avg_per_iteration": 1363.1,
+        "max_iteration": 1949,
+        "threshold_violations": 0
+      }
+    },
+    "agent_2": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=300)",
+      "duration": 302.0785114765167,
+      "timestamp": "2026-01-03T13:28:14.190520",
+      "token_stats": {}
+    },
+    "agent_3": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 6565, 'iterations': 4, 'avg_per_iteration': 1641.25, 'max_iteration': 2690, 'threshold_violations': 1}",
+      "duration": 768.6815404891968,
+      "timestamp": "2026-01-03T13:41:02.891600",
+      "token_stats": {
+        "total_tokens": 6565,
+        "iterations": 4,
+        "avg_per_iteration": 1641.25,
+        "max_iteration": 2690,
+        "threshold_violations": 1
+      }
+    },
+    "agent_4": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=300)",
+      "duration": 460.25397515296936,
+      "timestamp": "2026-01-03T13:48:43.206857",
+      "token_stats": {}
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2026-01-03T13:15:37.226433",
+      "end_time": "2026-01-03T13:23:11.838357",
+      "duration": 454.59364128112793,
+      "status": "success",
+      "output_length": 36,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 13631,
+        "iterations": 10,
+        "avg_per_iteration": 1363.1,
+        "max_iteration": 1949,
+        "threshold_violations": 0
+      }
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "**AnalysisAgent**",
+      "position": 2,
+      "start_time": "2026-01-03T13:23:12.099348",
+      "end_time": "2026-01-03T13:28:14.191532",
+      "duration": 302.0785114765167,
+      "status": "success",
+      "output_length": 125,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_name": "**DocumenterAgent**",
+      "position": 3,
+      "start_time": "2026-01-03T13:28:14.207392",
+      "end_time": "2026-01-03T13:41:02.892777",
+      "duration": 768.6815404891968,
+      "status": "success",
+      "output_length": 153,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 6565,
+        "iterations": 4,
+        "avg_per_iteration": 1641.25,
+        "max_iteration": 2690,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_name": "**SchedulerAgent**",
+      "position": 4,
+      "start_time": "2026-01-03T13:41:02.936305",
+      "end_time": "2026-01-03T13:48:43.208362",
+      "duration": 460.25397515296936,
+      "status": "success",
+      "output_length": 125,
+      "retry_count": 0,
+      "token_stats": {}
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

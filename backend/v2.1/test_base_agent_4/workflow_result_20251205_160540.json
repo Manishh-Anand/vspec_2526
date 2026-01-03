@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "workflow_id": "unknown_id",
+  "domain": "Data",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 16.81842,
+  "start_time": "2025-12-05T16:05:23.591197",
+  "end_time": "2025-12-05T16:05:40.410613",
+  "total_agents": 1,
+  "agents_executed": 1,
+  "agents_succeeded": 1,
+  "agents_failed": 0,
+  "final_output": "[response]",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "[response]",
+      "duration": 16.81087040901184,
+      "timestamp": "2025-12-05T16:05:40.408608",
+      "token_stats": {
+        "total_tokens": 208,
+        "iterations": 1,
+        "avg_per_iteration": 208.0,
+        "max_iteration": 208,
+        "threshold_violations": 0
+      }
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2025-12-05T16:05:23.596227",
+      "end_time": "2025-12-05T16:05:40.408608",
+      "duration": 16.81087040901184,
+      "status": "success",
+      "output_length": 10,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 208,
+        "iterations": 1,
+        "avg_per_iteration": 208.0,
+        "max_iteration": 208,
+        "threshold_violations": 0
+      }
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

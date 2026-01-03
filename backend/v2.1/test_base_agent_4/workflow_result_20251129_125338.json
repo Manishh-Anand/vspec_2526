@@ -1,0 +1,96 @@
+{
+  "success": true,
+  "workflow_id": "workflow_manual_test",
+  "domain": "productivity",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 32.139787,
+  "start_time": "2025-11-29T12:53:06.518344",
+  "end_time": "2025-11-29T12:53:38.658131",
+  "total_agents": 2,
+  "agents_executed": 6,
+  "agents_succeeded": 6,
+  "agents_failed": 0,
+  "final_output": "The research results have been emailed to researcher@example.com.",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "[response]",
+      "duration": 12.741211,
+      "timestamp": "2025-11-29T12:53:19.262702"
+    },
+    "agent_2": {
+      "output": "The research results have been emailed to researcher@example.com.",
+      "duration": 19.390427,
+      "timestamp": "2025-11-29T12:53:38.656131"
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:53:06.521491",
+      "end_time": "2025-11-29T12:53:19.262702",
+      "duration": 12.741211,
+      "status": "success",
+      "output_length": 10,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:53:06.521491",
+      "end_time": "2025-11-29T12:53:19.262702",
+      "duration": 12.741211,
+      "status": "success",
+      "output_length": 10,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "EmailAgent",
+      "position": 2,
+      "start_time": "2025-11-29T12:53:19.265704",
+      "end_time": "2025-11-29T12:53:38.656131",
+      "duration": 19.390427,
+      "status": "success",
+      "output_length": 65,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:53:06.521491",
+      "end_time": "2025-11-29T12:53:19.262702",
+      "duration": 12.741211,
+      "status": "success",
+      "output_length": 10,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:53:06.521491",
+      "end_time": "2025-11-29T12:53:19.262702",
+      "duration": 12.741211,
+      "status": "success",
+      "output_length": 10,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "EmailAgent",
+      "position": 2,
+      "start_time": "2025-11-29T12:53:19.265704",
+      "end_time": "2025-11-29T12:53:38.656131",
+      "duration": 19.390427,
+      "status": "success",
+      "output_length": 65,
+      "retry_count": 0
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

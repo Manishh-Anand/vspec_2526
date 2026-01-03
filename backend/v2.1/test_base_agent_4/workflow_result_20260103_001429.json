@@ -1,0 +1,140 @@
+{
+  "success": true,
+  "workflow_id": "workflow_TIMESTAMP",
+  "domain": "Productivity|Research|Communication|Data|Creative",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 1118.66904,
+  "start_time": "2026-01-02T23:55:50.951423",
+  "end_time": "2026-01-03T00:14:29.624137",
+  "total_agents": 4,
+  "agents_executed": 4,
+  "agents_succeeded": 4,
+  "agents_failed": 0,
+  "final_output": "Hey [Friend's Name],\n\nGuess what? There's a chance to experience the KTM ADV 390 X PLUS firsthand! I know you've been interested in adventure bikes, and this could be perfect for you.\n\nKTM is offering test rides at select locations, and it would be awesome if we could check it out together. The ADV 390 X PLUS is getting rave reviews as a versatile all-road motorcycle that handles both on-road commutes and off-road adventures with ease.\n\nHere's the link to book a test ride: [link from search results]\n\nLet me know if you're interested, and maybe we can plan it together!\n\nCheers,\n[Your Name]",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 3741, 'iterations': 3, 'avg_per_iteration': 1247.0, 'max_iteration': 1973, 'threshold_violations': 1}",
+      "duration": 526.3664040565491,
+      "timestamp": "2026-01-03T00:04:37.339976",
+      "token_stats": {
+        "total_tokens": 3741,
+        "iterations": 3,
+        "avg_per_iteration": 1247.0,
+        "max_iteration": 1973,
+        "threshold_violations": 1
+      }
+    },
+    "agent_2": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 2094, 'iterations': 2, 'avg_per_iteration': 1047.0, 'max_iteration': 1250, 'threshold_violations': 1}",
+      "duration": 236.27596473693848,
+      "timestamp": "2026-01-03T00:08:33.686015",
+      "token_stats": {
+        "total_tokens": 2094,
+        "iterations": 2,
+        "avg_per_iteration": 1047.0,
+        "max_iteration": 1250,
+        "threshold_violations": 1
+      }
+    },
+    "agent_3": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 3168, 'iterations': 3, 'avg_per_iteration': 1056.0, 'max_iteration': 1271, 'threshold_violations': 1}",
+      "duration": 259.6021537780762,
+      "timestamp": "2026-01-03T00:12:53.321310",
+      "token_stats": {
+        "total_tokens": 3168,
+        "iterations": 3,
+        "avg_per_iteration": 1056.0,
+        "max_iteration": 1271,
+        "threshold_violations": 1
+      }
+    },
+    "agent_4": {
+      "output": "Hey [Friend's Name],\n\nGuess what? There's a chance to experience the KTM ADV 390 X PLUS firsthand! I know you've been interested in adventure bikes, and this could be perfect for you.\n\nKTM is offering test rides at select locations, and it would be awesome if we could check it out together. The ADV 390 X PLUS is getting rave reviews as a versatile all-road motorcycle that handles both on-road commutes and off-road adventures with ease.\n\nHere's the link to book a test ride: [link from search results]\n\nLet me know if you're interested, and maybe we can plan it together!\n\nCheers,\n[Your Name]",
+      "duration": 96.23653531074524,
+      "timestamp": "2026-01-03T00:14:29.594821",
+      "token_stats": {
+        "total_tokens": 849,
+        "iterations": 1,
+        "avg_per_iteration": 849.0,
+        "max_iteration": 849,
+        "threshold_violations": 0
+      }
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2026-01-02T23:55:50.970568",
+      "end_time": "2026-01-03T00:04:37.339976",
+      "duration": 526.3664040565491,
+      "status": "success",
+      "output_length": 152,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 3741,
+        "iterations": 3,
+        "avg_per_iteration": 1247.0,
+        "max_iteration": 1973,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "**AnalysisAgent**",
+      "position": 2,
+      "start_time": "2026-01-03T00:04:37.408538",
+      "end_time": "2026-01-03T00:08:33.687607",
+      "duration": 236.27596473693848,
+      "status": "success",
+      "output_length": 152,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 2094,
+        "iterations": 2,
+        "avg_per_iteration": 1047.0,
+        "max_iteration": 1250,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_name": "**DocumenterAgent**",
+      "position": 3,
+      "start_time": "2026-01-03T00:08:33.715138",
+      "end_time": "2026-01-03T00:12:53.322828",
+      "duration": 259.6021537780762,
+      "status": "success",
+      "output_length": 152,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 3168,
+        "iterations": 3,
+        "avg_per_iteration": 1056.0,
+        "max_iteration": 1271,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_name": "**CommunicationAgent**",
+      "position": 4,
+      "start_time": "2026-01-03T00:12:53.356047",
+      "end_time": "2026-01-03T00:14:29.595341",
+      "duration": 96.23653531074524,
+      "status": "success",
+      "output_length": 595,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 849,
+        "iterations": 1,
+        "avg_per_iteration": 849.0,
+        "max_iteration": 849,
+        "threshold_violations": 0
+      }
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

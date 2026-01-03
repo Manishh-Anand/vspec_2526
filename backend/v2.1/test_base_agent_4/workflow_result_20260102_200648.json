@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "workflow_id": "workflow_20241129_002",
+  "domain": "Productivity|Research|Communication|Data|Creative",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 20.45573,
+  "start_time": "2026-01-02T20:06:28.114654",
+  "end_time": "2026-01-02T20:06:48.570382",
+  "total_agents": 5,
+  "agents_executed": 5,
+  "agents_succeeded": 5,
+  "agents_failed": 0,
+  "final_output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C4C24AB880>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C4C24AB8E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.095109939575195,
+      "timestamp": "2026-01-02T20:06:32.222318",
+      "token_stats": {}
+    },
+    "agent_2": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C4C2528430>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.0956737995147705,
+      "timestamp": "2026-01-02T20:06:36.321525",
+      "token_stats": {}
+    },
+    "agent_3": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C4C2528EE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.0752153396606445,
+      "timestamp": "2026-01-02T20:06:40.398160",
+      "token_stats": {}
+    },
+    "agent_4": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C4C24ABEB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.086658716201782,
+      "timestamp": "2026-01-02T20:06:44.487825",
+      "token_stats": {}
+    },
+    "agent_5": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C4C24AB880>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.080549955368042,
+      "timestamp": "2026-01-02T20:06:48.570382",
+      "token_stats": {}
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2026-01-02T20:06:28.126696",
+      "end_time": "2026-01-02T20:06:32.222318",
+      "duration": 4.095109939575195,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "**DocumenterAgent**",
+      "position": 2,
+      "start_time": "2026-01-02T20:06:32.224857",
+      "end_time": "2026-01-02T20:06:36.321525",
+      "duration": 4.0956737995147705,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_name": "**SchedulerAgent**",
+      "position": 3,
+      "start_time": "2026-01-02T20:06:36.322945",
+      "end_time": "2026-01-02T20:06:40.398160",
+      "duration": 4.0752153396606445,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_name": "**NotifierAgent**",
+      "position": 4,
+      "start_time": "2026-01-02T20:06:40.400161",
+      "end_time": "2026-01-02T20:06:44.487825",
+      "duration": 4.086658716201782,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_5",
+      "agent_name": "**DocumenterAgent**",
+      "position": 5,
+      "start_time": "2026-01-02T20:06:44.488827",
+      "end_time": "2026-01-02T20:06:48.570382",
+      "duration": 4.080549955368042,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0,
+      "token_stats": {}
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

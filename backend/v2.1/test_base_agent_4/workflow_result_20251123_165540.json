@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "workflow_id": "workflow_20251118_125101",
+  "error": "unsupported operand type(s) for +: 'dict' and 'dict'",
+  "error_type": "TypeError",
+  "duration_seconds": 0.001999,
+  "start_time": "2025-11-23T16:55:40.510883",
+  "end_time": "2025-11-23T16:55:40.512882",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\final_yr_project_2526\\backend\\v2.1\\test_base_agent_4\\langgraph_workflow_builder.py\", line 558, in execute\n    final_state = self.compiled_workflow.invoke(initial_state)\n  File \"C:\\Users\\manis\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\langgraph\\pregel\\__init__.py\", line 1600, in invoke\n    for chunk in self.stream(\n  File \"C:\\Users\\manis\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\langgraph\\pregel\\__init__.py\", line 1322, in stream\n    while loop.tick(\n  File \"C:\\Users\\manis\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\langgraph\\pregel\\loop.py\", line 295, in tick\n    mv_writes = apply_writes(\n  File \"C:\\Users\\manis\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\langgraph\\pregel\\algo.py\", line 250, in apply_writes\n    if channels[chan].update(vals) and get_next_version is not None:\n  File \"C:\\Users\\manis\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\langgraph\\channels\\binop.py\", line 88, in update\n    self.value = self.operator(self.value, value)\nTypeError: unsupported operand type(s) for +: 'dict' and 'dict'\n"
+}

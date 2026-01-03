@@ -1,0 +1,22 @@
+{
+  "workflow_metadata": {
+    "workflow_id": "error_20251129_121734",
+    "domain": "error",
+    "selected_architecture": "None",
+    "complexity_level": "error",
+    "total_agents": 0,
+    "estimated_execution_time": "failed"
+  },
+  "agents": [],
+  "orchestration": {
+    "pattern": "error",
+    "connections": []
+  },
+  "domain_config": {
+    "security": "unknown",
+    "compliance": [],
+    "constraints": {
+      "error": "division by zero"
+    }
+  }
+}

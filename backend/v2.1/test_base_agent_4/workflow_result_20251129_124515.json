@@ -1,0 +1,96 @@
+{
+  "success": true,
+  "workflow_id": "workflow_manual_test",
+  "domain": "productivity",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 8.19216,
+  "start_time": "2025-11-29T12:45:06.833166",
+  "end_time": "2025-11-29T12:45:15.025326",
+  "total_agents": 2,
+  "agents_executed": 6,
+  "agents_succeeded": 6,
+  "agents_failed": 0,
+  "final_output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F5496E3F20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F5497447A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.093064,
+      "timestamp": "2025-11-29T12:45:10.927798"
+    },
+    "agent_2": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F5496E3F20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "duration": 4.094383,
+      "timestamp": "2025-11-29T12:45:15.024320"
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:45:06.834734",
+      "end_time": "2025-11-29T12:45:10.927798",
+      "duration": 4.093064,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:45:06.834734",
+      "end_time": "2025-11-29T12:45:10.927798",
+      "duration": 4.093064,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "EmailAgent",
+      "position": 2,
+      "start_time": "2025-11-29T12:45:10.929937",
+      "end_time": "2025-11-29T12:45:15.024320",
+      "duration": 4.094383,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:45:06.834734",
+      "end_time": "2025-11-29T12:45:10.927798",
+      "duration": 4.093064,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "ResearchAgent",
+      "position": 1,
+      "start_time": "2025-11-29T12:45:06.834734",
+      "end_time": "2025-11-29T12:45:10.927798",
+      "duration": 4.093064,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "EmailAgent",
+      "position": 2,
+      "start_time": "2025-11-29T12:45:10.929937",
+      "end_time": "2025-11-29T12:45:15.024320",
+      "duration": 4.094383,
+      "status": "success",
+      "output_length": 372,
+      "retry_count": 0
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

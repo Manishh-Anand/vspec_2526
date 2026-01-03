@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "workflow_id": "workflow_20241129_002",
+  "domain": "Data",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 20.74957,
+  "start_time": "2025-12-05T15:31:30.636548",
+  "end_time": "2025-12-05T15:31:51.386118",
+  "total_agents": 1,
+  "agents_executed": 2,
+  "agents_succeeded": 2,
+  "agents_failed": 0,
+  "final_output": "[The extracted data from the webpage would be provided here]",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "[The extracted data from the webpage would be provided here]",
+      "duration": 20.744017,
+      "timestamp": "2025-12-05T15:31:51.384117"
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2025-12-05T15:31:30.640100",
+      "end_time": "2025-12-05T15:31:51.384117",
+      "duration": 20.744017,
+      "status": "success",
+      "output_length": 60,
+      "retry_count": 0
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2025-12-05T15:31:30.640100",
+      "end_time": "2025-12-05T15:31:51.384117",
+      "duration": 20.744017,
+      "status": "success",
+      "output_length": 60,
+      "retry_count": 0
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

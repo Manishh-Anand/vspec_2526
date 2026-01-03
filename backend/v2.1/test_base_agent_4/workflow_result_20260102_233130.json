@@ -1,0 +1,158 @@
+{
+  "success": true,
+  "workflow_id": "workflow_20241129_002",
+  "domain": "Productivity|Research|Communication|Data|Creative",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 1359.13383,
+  "start_time": "2026-01-02T23:08:51.582468",
+  "end_time": "2026-01-02T23:31:30.719394",
+  "total_agents": 5,
+  "agents_executed": 5,
+  "agents_succeeded": 5,
+  "agents_failed": 0,
+  "final_output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=300)",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 3130, 'iterations': 3, 'avg_per_iteration': 1043.3333333333333, 'max_iteration': 1239, 'threshold_violations': 1}",
+      "duration": 273.4894988536835,
+      "timestamp": "2026-01-02T23:13:25.085145",
+      "token_stats": {
+        "total_tokens": 3130,
+        "iterations": 3,
+        "avg_per_iteration": 1043.3333333333333,
+        "max_iteration": 1239,
+        "threshold_violations": 1
+      }
+    },
+    "agent_2": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 1241, 'iterations': 1, 'avg_per_iteration': 1241.0, 'max_iteration': 1241, 'threshold_violations': 1}",
+      "duration": 227.01018261909485,
+      "timestamp": "2026-01-02T23:17:12.145015",
+      "token_stats": {
+        "total_tokens": 1241,
+        "iterations": 1,
+        "avg_per_iteration": 1241.0,
+        "max_iteration": 1241,
+        "threshold_violations": 1
+      }
+    },
+    "agent_3": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 2149, 'iterations': 2, 'avg_per_iteration': 1074.5, 'max_iteration': 1374, 'threshold_violations': 1}",
+      "duration": 316.0549657344818,
+      "timestamp": "2026-01-02T23:22:28.219402",
+      "token_stats": {
+        "total_tokens": 2149,
+        "iterations": 2,
+        "avg_per_iteration": 1074.5,
+        "max_iteration": 1374,
+        "threshold_violations": 1
+      }
+    },
+    "agent_4": {
+      "output": "Stopped by Token Sentinel. Stats: {'total_tokens': 1292, 'iterations': 1, 'avg_per_iteration': 1292.0, 'max_iteration': 1292, 'threshold_violations': 1}",
+      "duration": 240.2280342578888,
+      "timestamp": "2026-01-02T23:26:28.481006",
+      "token_stats": {
+        "total_tokens": 1292,
+        "iterations": 1,
+        "avg_per_iteration": 1292.0,
+        "max_iteration": 1292,
+        "threshold_violations": 1
+      }
+    },
+    "agent_5": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=300)",
+      "duration": 302.1409523487091,
+      "timestamp": "2026-01-02T23:31:30.675293",
+      "token_stats": {}
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2026-01-02T23:08:51.593469",
+      "end_time": "2026-01-02T23:13:25.086152",
+      "duration": 273.4894988536835,
+      "status": "success",
+      "output_length": 164,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 3130,
+        "iterations": 3,
+        "avg_per_iteration": 1043.3333333333333,
+        "max_iteration": 1239,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "**DocumenterAgent**",
+      "position": 2,
+      "start_time": "2026-01-02T23:13:25.132793",
+      "end_time": "2026-01-02T23:17:12.145015",
+      "duration": 227.01018261909485,
+      "status": "success",
+      "output_length": 152,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 1241,
+        "iterations": 1,
+        "avg_per_iteration": 1241.0,
+        "max_iteration": 1241,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_name": "**SchedulerAgent**",
+      "position": 3,
+      "start_time": "2026-01-02T23:17:12.160250",
+      "end_time": "2026-01-02T23:22:28.221412",
+      "duration": 316.0549657344818,
+      "status": "success",
+      "output_length": 152,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 2149,
+        "iterations": 2,
+        "avg_per_iteration": 1074.5,
+        "max_iteration": 1374,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_name": "**NotifierAgent**",
+      "position": 4,
+      "start_time": "2026-01-02T23:22:28.252386",
+      "end_time": "2026-01-02T23:26:28.483066",
+      "duration": 240.2280342578888,
+      "status": "success",
+      "output_length": 152,
+      "retry_count": 0,
+      "token_stats": {
+        "total_tokens": 1292,
+        "iterations": 1,
+        "avg_per_iteration": 1292.0,
+        "max_iteration": 1292,
+        "threshold_violations": 1
+      }
+    },
+    {
+      "agent_id": "agent_5",
+      "agent_name": "**DocumenterAgent**",
+      "position": 5,
+      "start_time": "2026-01-02T23:26:28.510138",
+      "end_time": "2026-01-02T23:31:30.675802",
+      "duration": 302.1409523487091,
+      "status": "success",
+      "output_length": 125,
+      "retry_count": 0,
+      "token_stats": {}
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}

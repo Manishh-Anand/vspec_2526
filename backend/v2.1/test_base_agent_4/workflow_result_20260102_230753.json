@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "workflow_id": "workflow_20241129_002",
+  "domain": "Productivity|Research|Communication|Data|Creative",
+  "architecture": "Pipeline/Sequential",
+  "duration_seconds": 310.7473,
+  "start_time": "2026-01-02T23:02:43.205916",
+  "end_time": "2026-01-02T23:07:53.957813",
+  "total_agents": 5,
+  "agents_executed": 5,
+  "agents_succeeded": 5,
+  "agents_failed": 0,
+  "final_output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=60)",
+  "agent_outputs": {
+    "agent_1": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=60)",
+      "duration": 62.12914967536926,
+      "timestamp": "2026-01-02T23:03:45.371710",
+      "token_stats": {}
+    },
+    "agent_2": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=60)",
+      "duration": 62.08917164802551,
+      "timestamp": "2026-01-02T23:04:47.495408",
+      "token_stats": {}
+    },
+    "agent_3": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=60)",
+      "duration": 62.120577335357666,
+      "timestamp": "2026-01-02T23:05:49.641492",
+      "token_stats": {}
+    },
+    "agent_4": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=60)",
+      "duration": 62.097893714904785,
+      "timestamp": "2026-01-02T23:06:51.776630",
+      "token_stats": {}
+    },
+    "agent_5": {
+      "output": "Error calling LLM: LM Studio call failed: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=60)",
+      "duration": 62.1158332824707,
+      "timestamp": "2026-01-02T23:07:53.923290",
+      "token_stats": {}
+    }
+  },
+  "execution_log": [
+    {
+      "agent_id": "agent_1",
+      "agent_name": "**ResearchAgent**",
+      "position": 1,
+      "start_time": "2026-01-02T23:02:43.222027",
+      "end_time": "2026-01-02T23:03:45.373800",
+      "duration": 62.12914967536926,
+      "status": "success",
+      "output_length": 124,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_name": "**DocumenterAgent**",
+      "position": 2,
+      "start_time": "2026-01-02T23:03:45.400297",
+      "end_time": "2026-01-02T23:04:47.495408",
+      "duration": 62.08917164802551,
+      "status": "success",
+      "output_length": 124,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_name": "**SchedulerAgent**",
+      "position": 3,
+      "start_time": "2026-01-02T23:04:47.505033",
+      "end_time": "2026-01-02T23:05:49.643004",
+      "duration": 62.120577335357666,
+      "status": "success",
+      "output_length": 124,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_name": "**NotifierAgent**",
+      "position": 4,
+      "start_time": "2026-01-02T23:05:49.660196",
+      "end_time": "2026-01-02T23:06:51.776630",
+      "duration": 62.097893714904785,
+      "status": "success",
+      "output_length": 124,
+      "retry_count": 0,
+      "token_stats": {}
+    },
+    {
+      "agent_id": "agent_5",
+      "agent_name": "**DocumenterAgent**",
+      "position": 5,
+      "start_time": "2026-01-02T23:06:51.792988",
+      "end_time": "2026-01-02T23:07:53.924912",
+      "duration": 62.1158332824707,
+      "status": "success",
+      "output_length": 124,
+      "retry_count": 0,
+      "token_stats": {}
+    }
+  ],
+  "errors": [],
+  "retry_counts": {}
+}
