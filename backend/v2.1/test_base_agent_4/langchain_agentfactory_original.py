@@ -303,7 +303,7 @@ class LangChainAgentFactory:
     def __init__(
         self, 
         lm_studio_url: str = "http://localhost:1234/v1",
-        lm_studio_model: str = "claude-3.7-sonnet-reasoning-gemma3-12b",
+        lm_studio_model: str = "qwen2.5-coder-14b-instruct",
         claude_cwd: Path = None
     ):
         self.lm_studio_url = lm_studio_url

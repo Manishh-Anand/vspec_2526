@@ -104,7 +104,7 @@ R (Result): ...
     try:
         # Prepare JSON payload for LM Studio API
         payload = {
-            "model": "claude-3.7-sonnet-reasoning-gemma3-12b",
+            "model": "qwen2.5-coder-14b-instruct",
             "messages": [{"role": "user", "content": full_prompt}],
             "temperature": 0.7,
             "max_tokens": 5000

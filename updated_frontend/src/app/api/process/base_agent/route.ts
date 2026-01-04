@@ -7,7 +7,7 @@ const execPromise = promisify(exec);
 
 export async function POST() {
     try {
-        const scriptPath = "d:\\final_yr_project_2526\\backend\\v2.1\\test_base_agent_4\\base_agent_4.py";
+        const scriptPath = CONFIG.paths.baseAgentScript;
         // Verify path first or just use it. The user flow said base_agent_4.py
         const cwd = scriptPath.substring(0, scriptPath.lastIndexOf("\\"));
 

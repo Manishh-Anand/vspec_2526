@@ -834,7 +834,7 @@ class EnhancedWorkflowBuilder:
         self,
         workflow_config_path: str,
         lm_studio_url: str = "http://localhost:1234/v1",
-        lm_studio_model: str = "claude-3.7-sonnet-reasoning-gemma3-12b",
+        lm_studio_model: str = "qwen2.5-coder-14b-instruct",
         max_agent_retries: int = 2
     ):
         self.workflow_config_path = workflow_config_path

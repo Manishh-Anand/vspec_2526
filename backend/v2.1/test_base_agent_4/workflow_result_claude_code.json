@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "executor": "claude_code_cli",
+  "workflow_id": "workflow_20241129_002",
+  "executed_at": "2026-01-03T23:43:27.033497",
+  "duration_seconds": 30.786766,
+  "error": null,
+  "summary": "Check raw_output for execution details.",
+  "raw_output": "# Execution Summary\n\n## Tools Used\n- Gmail (read email)\n- Gmail (send solution)\n- Notion (create page)\n- GitHub (create repository)\n\n## Created Artifacts\n\n### Email Analysis\n**From:** 1dt22ca027@dsatm.edu.in  \n**Subject:** Regarding Attendance Shortage and Request for Condonation  \n**Issue:** Student facing attendance shortage due to medical reasons and seeking condonation\n\n### Solution Delivered\nA comprehensive solution was provided covering:\n- Immediate steps for medical documentation\n- Formal condonation letter template\n- College policy review guidance\n- Preventive measures for future\n\n### Artifacts Created\n\n1. **Email Sent:** Solution delivered to manishmaverick10@gmail.com\n\n2. **Notion Page:** [Attendance Shortage Solution Guide](https://www.notion.so/Attendance-Shortage-Solution-Guide-17e3d3f94fe380fcae67f2c3cd67ba04)\n\n3. **GitHub Repository:** [attendance-condonation-guide](https://github.com/manishmaverick10/attendance-condonation-guide)  \n   Repository URL: https://github.com/manishmaverick10/attendance-condonation-guide\n\n## Status\n✅ All tasks completed successfully\n- Email analyzed\n- Solution crafted and sent\n- Notion documentation created\n- GitHub repository established with comprehensive guide\n"
+}

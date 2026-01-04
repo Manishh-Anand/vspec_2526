@@ -1,30 +1,26 @@
 {
   "workflow_metadata": {
-    "workflow_id": "workflow_TIMESTAMP",
-    "domain": "Research|Productivity|Documentation",
+    "workflow_id": "workflow_20241129_002",
+    "domain": "Productivity|Research|Communication|Data",
     "selected_architecture": "Pipeline/Sequential",
-    "total_agents": 4,
-    "user_prompt": " Please look up information on the internet about the KTM ADV 390 X PLUS in white color and gather the most useful details. Then create a new page in my workspace and write a short point-wise summary of what you found about this bike. After that, add a calendar event for taking a test ride of this bike on 20th November at 3:30 pm. Next, draft an email to my friend at 1dt22ca027@dsatm.edu.in\n saying that I am interested in this bike and asking if they will accompany me for the test ride. Finally, create a new repository in my github account and add a README.md file that contains the same summarized points about the bike.\" ",
-    "star_formatted": "# Researching and Documenting the KTM ADV 390 X PLUS Motorcycle - STAR Method Format\n\n## S (Situation)\nI was tasked with researching a new motorcycle purchase option: the KTM ADV 390 X PLUS in white. This involved gathering all relevant information, planning a test ride, documenting my findings, and creating digital assets for future reference.\n\n## T (Task)\nThe complete task included:\n1. Researching comprehensive details about the bike online\n2. Creating a concise summary document with key features\n3. Scheduling a physical test ride experience\n4. Coordinating with a friend to attend the test ride\n5. Building digital documentation for future reference\n\n## A (Action)\nI took these steps to complete the task:\n1. **Online Research**: Searched reputable motorcycle websites, review sites, and manufacturer resources to gather detailed specifications, features, pricing, and user reviews of the KTM ADV 390 X PLUS in white color\n2. **Summary Document Creation**: Developed a structured point-wise summary highlighting key aspects like engine performance, design elements, technology features, safety systems, and dimensions\n3. **Calendar Event Setup**: Created a calendar event for November 20th at 3:30 pm with location details (once confirmed) to ensure I don't miss the test ride appointment\n4. **Email Communication**: Drafted a personalized email to my friend [1dt22ca027@dsatm.edu.in] expressing interest in the bike and extending an invitation to join me for the test ride\n5. **GitHub Repository Setup**: Created a new repository on GitHub with a README.md file containing the comprehensive summary of the motorcycle\n\n## R (Result)\nBy completing this task, I achieved:\n- A thorough understanding of the KTM ADV 390 X PLUS in white color\n- Organized documentation for future reference and comparison purposes\n- Confirmation of a test ride appointment on November 20th at 3:30 pm\n- Increased likelihood of having company during the test ride (pending friend's response)\n- Digital assets stored both locally and on GitHub for easy access\n\nThis comprehensive approach ensured I was well-informed before making a purchase decision and created valuable resources for future reference.",
-    "created_at": "2026-01-03T13:14:34.980462"
+    "total_agents": 5,
+    "user_prompt": "Hey so read my last email from 1dt22ca027@dsatm.edu.in and analyze what the email is about and provide me the best solution to solve this problem. After finding the solution You need to mail the solution to manishmaverick10@gmail.com and also create a notion page of the solution and create a GitHub page for this solution.",
+    "star_formatted": "Sure, I can help you format that prompt into the STAR method. Here's how it would look:\n\n**S (Situation):**\nYou received an email from \"1dt22ca027@dsatm.edu.in\" and need to analyze its content to understand the problem presented.\n\n**T (Task):**\nThe task involves analyzing the email, identifying the specific issue or problem mentioned, devising a solution to address that problem, and then taking two additional actions: sending the solution via email to \"manishmaverick10@gmail.com\" and creating both a Notion page and a GitHub repository for documentation of the solution.\n\n**A (Action):**\n1. **Read and Analyze:** Carefully read the email from \"1dt22ca027@dsatm.edu.in\" to understand the problem or issue being raised.\n2. **Solution Development:** Based on the analysis, develop a comprehensive solution that effectively addresses the problem identified in the email.\n3. **Email Solution:** Compose an email detailing the solution and send it to \"manishmaverick10@gmail.com.\"\n4. **Create Notion Page:** Set up a Notion page to document the solution, including details such as problem description, proposed solution steps, and any relevant information or resources.\n5. **Set Up GitHub Repository:** Initialize a GitHub repository for version control and documentation of the solution. Include files like code snippets (if applicable), diagrams, and detailed explanation documents.\n\n**R (Result):**\n- Successfully analyzed the email to identify the problem.\n- Developed and proposed an effective solution addressing the identified issue.\n- Sent the solution via email to \"manishmaverick10@gmail.com.\"\n- Created a Notion page with comprehensive documentation of the solution.\n- Set up a GitHub repository for ongoing collaboration, version control, and easy access to all related files and information.\n\nThis structured approach ensures that you systematically address each part of the task, providing clear steps from situation analysis through to final execution.",
+    "created_at": "2026-01-03T23:28:58.268587"
   },
   "agents": [
     {
       "agent_id": "agent_1",
-      "agent_name": "**ResearchAgent**",
+      "agent_name": "**AnalysisAgent**",
       "position": 1,
       "identity": {
-        "role": "Motorcycle Research Specialist",
-        "description": "Gathers comprehensive information about the KTM ADV 390 X PLUS motorcycle online"
+        "role": "Problem Analysis Specialist",
+        "description": "Analyzes the email to understand the problem"
       },
       "tools": [
         {
-          "name": "search_web",
-          "purpose": "Find detailed specifications, features, pricing, and user reviews"
-        },
-        {
-          "name": "read_url",
-          "purpose": "Extract content from websites"
+          "name": "read_email",
+          "purpose": "Read and analyze the incoming email"
         }
       ],
       "interface": {
@@ -37,20 +33,16 @@
     },
     {
       "agent_id": "agent_2",
-      "agent_name": "**AnalysisAgent**",
+      "agent_name": "**SolutionAgent**",
       "position": 2,
       "identity": {
-        "role": "Motorcycle Feature Analyst",
-        "description": "Analyzes research data and identifies key features for the summary document"
+        "role": "Solution Developer",
+        "description": "Develops a solution to address the identified problem"
       },
       "tools": [
         {
-          "name": "data_analysis",
-          "purpose": "Compare specifications and identify strengths/weaknesses"
-        },
-        {
-          "name": "feature_extraction",
-          "purpose": "Identify essential features to include in the summary"
+          "name": "develop_solution",
+          "purpose": "Create a comprehensive solution"
         }
       ],
       "interface": {
@@ -58,27 +50,25 @@
           "agent_1"
         ],
         "outputs_to": [
-          "agent_3"
+          "agent_3",
+          "agent_4",
+          "agent_5"
         ],
-        "error_strategy": "skip"
+        "error_strategy": "retry"
       }
     },
     {
       "agent_id": "agent_3",
-      "agent_name": "**DocumenterAgent**",
+      "agent_name": "**NotifierAgent**",
       "position": 3,
       "identity": {
-        "role": "Technical Documentation Specialist",
-        "description": "Creates a structured summary document with key motorcycle features and specifications"
+        "role": "Email Sender",
+        "description": "Sends the solution via email to manishmaverick10@gmail.com"
       },
       "tools": [
         {
-          "name": "create_doc",
-          "purpose": "Generate formatted document with headings, lists, and tables"
-        },
-        {
-          "name": "github_upload",
-          "purpose": "Store the documentation in a GitHub repository"
+          "name": "send_email",
+          "purpose": "Send solution email"
         }
       ],
       "interface": {
@@ -91,26 +81,46 @@
     },
     {
       "agent_id": "agent_4",
-      "agent_name": "**SchedulerAgent**",
+      "agent_name": "**DocumenterAgent**",
       "position": 4,
       "identity": {
-        "role": "Appointment Coordinator",
-        "description": "Schedules a test ride appointment and sends reminders to the user and friend"
+        "role": "Documentation Specialist",
+        "description": "Creates a Notion page for documenting the solution"
       },
       "tools": [
         {
-          "name": "calendar_event",
-          "purpose": "Create and manage calendar appointments"
-        },
-        {
-          "name": "send_email",
-          "purpose": "Send invitations and reminders"
+          "name": "create_doc",
+          "purpose": "Create Notion page"
         }
       ],
       "interface": {
-        "dependencies": [],
+        "dependencies": [
+          "agent_2"
+        ],
         "outputs_to": [],
-        "error_strategy": "skip"
+        "error_strategy": "retry"
+      }
+    },
+    {
+      "agent_id": "agent_5",
+      "agent_name": "**VersionControlAgent**",
+      "position": 5,
+      "identity": {
+        "role": "Repository Manager",
+        "description": "Sets up a GitHub repository for version control and documentation"
+      },
+      "tools": [
+        {
+          "name": "create_repo",
+          "purpose": "Initialize GitHub repository"
+        }
+      ],
+      "interface": {
+        "dependencies": [
+          "agent_2"
+        ],
+        "outputs_to": [],
+        "error_strategy": "retry"
       }
     }
   ],
@@ -125,6 +135,16 @@
       {
         "from": "agent_2",
         "to": "agent_3",
+        "type": "sequential"
+      },
+      {
+        "from": "agent_2",
+        "to": "agent_4",
+        "type": "sequential"
+      },
+      {
+        "from": "agent_2",
+        "to": "agent_5",
         "type": "sequential"
       }
     ]

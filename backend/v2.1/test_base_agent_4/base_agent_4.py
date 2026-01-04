@@ -7,7 +7,7 @@
 
 # # LMStudioLLM Class (Copied from langchain_agentfactory.py)
 # class LMStudioLLM:
-#     def __init__(self, base_url="http://localhost:1234/v1", model="claude-3.7-sonnet-reasoning-gemma3-12b", temperature=0.3):
+#     def __init__(self, base_url="http://localhost:1234/v1", model="qwen2.5-coder-14b-instruct", temperature=0.3):
 #         self.base_url = base_url
 #         self.model = model
 #         self.temperature = temperature
@@ -121,7 +121,7 @@
 #     # Initialize LLM
 #     llm = LMStudioLLM(
 #         base_url="http://localhost:1234/v1",
-#         model="claude-3.7-sonnet-reasoning-gemma3-12b",
+#         model="qwen2.5-coder-14b-instruct",
 #         temperature=0.3
 #     )
 
@@ -320,7 +320,7 @@ from datetime import datetime
 
 # LMStudioLLM Class
 class LMStudioLLM:
-    def __init__(self, base_url="http://localhost:1234/v1", model="claude-3.7-sonnet-reasoning-gemma3-12b", temperature=0.3):
+    def __init__(self, base_url="http://localhost:1234/v1", model="qwen2.5-coder-14b-instruct", temperature=0.3):
         self.base_url = base_url
         self.model = model
         self.temperature = temperature
@@ -474,7 +474,7 @@ def main():
     # Initialize LLM
     llm = LMStudioLLM(
         base_url="http://localhost:1234/v1",
-        model="claude-3.7-sonnet-reasoning-gemma3-12b",
+        model="qwen2.5-coder-14b-instruct",
         temperature=0.3
     )
 

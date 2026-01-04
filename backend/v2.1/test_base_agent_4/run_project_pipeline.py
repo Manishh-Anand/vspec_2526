@@ -44,11 +44,11 @@ def main():
     input_json = "BA_op.json"
     run_step([sys.executable, str(step3_script), input_json], "Map Tools (tool_mapper)")
     
-    # Step 4: Execute Workflow (langgraph_workflow_builder.py)
-    # Runs the agents
-    step4_script = base_dir / "langgraph_workflow_builder.py"
+    # Step 4: Execute Workflow (claude_code_executor.py)
+    # Delegates execution to Claude Code CLI (One-Shot)
+    step4_script = base_dir / "claude_code_executor.py"
     enhanced_json = "BA_enhanced.json"
-    run_step([sys.executable, str(step4_script), enhanced_json], "Execute Workflow")
+    run_step([sys.executable, str(step4_script), enhanced_json], "Execute Workflow (Claude Code One-Shot)")
     
     print(f"\n{'='*60}")
     print("PROJECT PIPELINE EXECUTION COMPLETED SUCCESSFULLY")

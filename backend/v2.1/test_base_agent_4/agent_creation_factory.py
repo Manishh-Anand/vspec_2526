@@ -1097,7 +1097,7 @@
 # #             response = requests.post(
 # #                 self.local_llm_url,
 # #                 json={
-# #                     "model": self.llm_config['model'],  # claude-3.7-sonnet-reasoning-gemma3-12b
+# #                     "model": self.llm_config['model'],  # qwen2.5-coder-14b-instruct
 # #                     "messages": messages,
 # #                     "temperature": self.llm_config['params']['temperature'],
 # #                     "max_tokens": self.llm_config['params']['max_tokens']
@@ -2043,7 +2043,7 @@
 #             response = requests.post(
 #                 self.local_llm_url,
 #                 json={
-#                     "model": self.llm_config['model'],  # claude-3.7-sonnet-reasoning-gemma3-12b
+#                     "model": self.llm_config['model'],  # qwen2.5-coder-14b-instruct
 #                     "messages": messages,
 #                     "temperature": self.llm_config['params']['temperature'],
 #                     "max_tokens": self.llm_config['params']['max_tokens']
@@ -2304,7 +2304,7 @@
 #             'llm_url': llm_url,
 #             'claude_cwd': Path(r"C:\Users\manis"),
 #             'shared_state': {},
-#             'model_id': 'claude-3.7-sonnet-reasoning-gemma3-12b'  # Your LM Studio model identifier
+#             'model_id': 'qwen2.5-coder-14b-instruct'  # Your LM Studio model identifier
 #         }
     
 #     def create_agent(self, agent_config: Dict[str, Any]) -> BaseAgent:
@@ -3000,7 +3000,7 @@ class BaseAgent(ABC):
             response = requests.post(
                 self.local_llm_url,
                 json={
-                    "model": self.llm_config['model'],  # claude-3.7-sonnet-reasoning-gemma3-12b
+                    "model": self.llm_config['model'],  # qwen2.5-coder-14b-instruct
                     "messages": messages,
                     "temperature": self.llm_config['params']['temperature'],
                     "max_tokens": self.llm_config['params']['max_tokens']
@@ -3261,7 +3261,7 @@ class AgentFactory:
             'llm_url': llm_url,
             'claude_cwd': Path(r"C:\Users\manis"),
             'shared_state': {},
-            'model_id': 'claude-3.7-sonnet-reasoning-gemma3-12b'  # Your LM Studio model identifier
+            'model_id': 'qwen2.5-coder-14b-instruct'  # Your LM Studio model identifier
         }
     
     def create_agent(self, agent_config: Dict[str, Any]) -> BaseAgent:
